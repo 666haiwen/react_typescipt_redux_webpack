@@ -17,8 +17,8 @@
 4. 在 `site\frontend` 中打开 cmd，并输入以下命令：
 
     cnpm install  // 安装第三方库
-    npm start  // 运行前端,默认地址为:localhost:8000
+    npm start  // 运行前端,默认地址为:localhost:8060
 
 # 2. 后端
 
-runserver manage.py runserver 0.0.0.0:8080
+runserver manage.py runserver 0.0.0.0:8000
