@@ -20,18 +20,11 @@ module.exports = {
       }
     ]
   },
-  devtool: 'source-map',
-  plugins: [
-    new UglifyJSPlugin({
-      sourceMap: true
-    })
-  ],
   devServer: {
-    port: 8060,
+    port: 8080,
     proxy: {
       '/': 'http://localhost:8000'
     },
     watchContentBase: true,
   }
-
 };
