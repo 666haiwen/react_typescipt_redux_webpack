@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server -d",
-    "buid": "webpack -w -d"
+    "build": "webpack -w -d"
   },
   "keywords": [],
   "author": "",
@@ -19,26 +19,26 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
-    "css-loader": "^0.28.9",
-    "eslint": "^4.18.1",
+    "css-loader": "^0.28.11",
+    "eslint": "^4.19.1",
     "eslint-loader": "^2.0.0",
     "eslint-plugin-react": "^7.7.0",
     "is-buffer": "^2.0.2",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.3.1",
+    "react-tabs": "^2.2.2",
     "style-loader": "^0.21.0",
     "webpack": "^4.2.0",
-    "webpack-cli": "^2.0.13",
-    "webpack-dev-server": "^3.1.1"
+    "webpack-cli": "^2.1.5",
+    "webpack-dev-server": "^3.1.5"
   },
   "dependencies": {
     "d3": "^5.4.0",
     "jquery": "^3.1.1",
     "lodash": "^4.17.5",
     "plotly": "^1.0.6",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "react-redux": "^5.0.6",
-    "react-router-dom": "^4.2.2",
-    "react-tabs": "^2.2.1",
     "redux": "^4.0.0",
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.2.0"
