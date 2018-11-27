@@ -5,7 +5,8 @@
   "main": "webpack.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server -d"
+    "start": "webpack-dev-server -d",
+    "build": "webpack -w -d"
   },
   "keywords": [],
   "author": "",
