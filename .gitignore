@@ -3,7 +3,7 @@ node_modules
 
 #frontend
 frontend/dist
-
+frontend/build
 #backend
 __pycache__
 backend/migrations
