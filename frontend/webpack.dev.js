@@ -1,26 +1,28 @@
-const path = require("path");
+const webpack = require('webpack')
+const path = require('path');
 
 module.exports = {
-  entry: ['./src/index.tsx'],
+  entry: ['webpack/hot/dev-server', './src/index.tsx'],
   output: {
-    path: path.resolve(__dirname, 'build/dist'),
+    path: path.resolve(__dirname, 'build'),
     filename: 'bundle.js'
   },
-  devtool: 'source-map',
+  devtool: 'cheap-eval-source-map',
   resolve: {
-    extensions: ['.ts', '.tsx', '.js', '.json']
+    extensions: ['.ts', '.tsx', '.js', '.json'],
+    alias: {
+      'react-dom': '@hot-loader/react-dom',
+    }
   },
   module: {
     rules: [
-      { 
-        test: /\.(ts|tsx)$/, 
-        use:['awesome-typescript-loader', 'eslint-loader']
-      },
-      { 
-        enforce: 'pre', 
-        test: /\.js$/, 
-        loader: 'source-map-loader'
-      },
+      {
+        test: /\.(ts|js)x?$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader'
+        },
+      },    
       {
         test: /\.css$/,
         use: [ 'style-loader', 'css-loader' ]
@@ -44,15 +46,12 @@ module.exports = {
       }
     ]
   },
-  externals: {
-    'react': 'React',
-    'react-dom': 'ReactDOM'
-  },
   devServer: {
-    port: 8060,
+    compress: true,
+    port: 8080,
+    hot: true,
     // proxy: {
     //   '/': 'http://localhost:8000'
     // },
-    watchContentBase: true,
   }
 };
