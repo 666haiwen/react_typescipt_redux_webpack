@@ -1,0 +1,11 @@
+#app {
+    width: 1920px;
+    height: 1080px;
+    overflow: hidden;
+    font-size: 24px;
+}
+
+.test-btn {
+    margin: 0 20px;
+    border: 0;
+}

@@ -1,5 +1,6 @@
 .vscode
 node_modules
+webpack_cache
 
 #frontend
 frontend/dist
