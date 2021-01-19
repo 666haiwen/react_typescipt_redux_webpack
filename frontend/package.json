@@ -24,8 +24,8 @@
     "@hot-loader/react-dom": "^16.13.0",
     "@types/d3": "^5.7.2",
     "@types/jquery": "^3.3.31",
-    "@types/react-css-modules": "^4.6.2",
     "@types/react": "^16.9.11",
+    "@types/react-css-modules": "^4.6.2",
     "@types/react-dom": "^16.9.3",
     "@types/react-redux": "^7.1.5",
     "@types/react-router-dom": "^5.1.2",
@@ -71,6 +71,7 @@
     "redux": "^4.0.4",
     "redux-logger": "^3.0.6",
     "redux-saga": "^1.1.3",
+    "redux-thunk": "^2.3.0",
     "typescript": "^3.6.4"
   }
 }
